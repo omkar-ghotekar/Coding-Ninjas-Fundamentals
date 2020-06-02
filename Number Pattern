@@ -1,0 +1,48 @@
+Print the following pattern
+
+Pattern for N = 4
+
+1
+23
+345
+4567
+
+
+JAVA CODE:-
+
+
+
+ import java.util.*;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+
+		Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        
+         int i, j, k;
+
+    for(i=1; i<=n; i++)
+    {
+        k = i;
+
+        // Logic to print numbers
+        for(j=1; j<=i; j++)
+        {
+            System.out.print(k);
+            k++;
+        }
+
+        System.out.println(" ");
+        
+	}
+
+}
+}
