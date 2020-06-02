@@ -1,0 +1,45 @@
+Given a number N, print sum of all even numbers from 1 to N.
+
+
+Sample Input 1 :
+
+6
+
+
+Sample Output 1 :
+
+12
+
+
+
+JAVA CODE:-
+
+
+import java.util.*;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        int sum=0;
+        for(int i=1;i<=n;i++)
+        {
+            if(i%2==0)
+            {
+                sum=sum+i;
+            }
+            else
+            {;}
+        }
+		System.out.println(sum);
+	}
+
+}
